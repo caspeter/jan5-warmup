@@ -17,12 +17,12 @@ function twoSum(arr, targetInt) {
             if (numToFind === arr[j]) {
                 newArr.push(arr[i]);
                 newArr.push(arr[j]);
-                console.log(newArr);
-                return;
+                // console.log(newArr);
+                return newArr;
             }
         }
     }
-    console.log('Nothing adds up to ', targetInt);
+    // console.log('Nothing adds up to ', targetInt);
 }
 
 // twoSum([1, 2, 3, 4, 5, 6, 7], 13);
@@ -31,4 +31,4 @@ function twoSum(arr, targetInt) {
 //
 // twoSum([1, 3, 5, 7, 9], 8);
 
-module.export = twoSum;
+module.exports = twoSum;
