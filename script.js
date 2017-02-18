@@ -10,6 +10,9 @@
 // npm install mocha chai --save
 
 function twoSum(arr, targetInt) {
+  if (!Array.isArray(arr)) {
+    return 'First input must be an array.'
+  }
     var newArr = [];
     for (var i = 0; i < arr.length; i++) {
         var numToFind = targetInt - arr[i];
